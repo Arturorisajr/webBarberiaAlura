@@ -1,41 +1,135 @@
+header{
+    background-color: #BBBBBB;
+    padding: 20px 0;
+}
+.barraNavegacion{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0px;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px; /* top, right, down, left */
+}
 
-.titulo{
-    padding-left: 30px; /* padding se refiere a el espaciado */
+nav a{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
 }
-#banner{
-    width: 100%;   
+nav a:hover{ /*Hover es cuando el mouse se posiciona sobre de*/
+    color: #c78c19;
+    text-decoration: underline;
 }
-.principal{
-    background: #CCCCCC;
-    padding: 20px;
+.paquetes{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
 }
-.encabezados{
+.paquetes li{
+    display: inline-block;
     text-align: center;
-}
-p{
-    text-align: center;
-}
-
-#mision{
-    font-size: 20px;
-}
-
-em strong{
-    color: red;
-}
-.diferenciales{
-    background: #FFFFFF;
-    padding: 30px;
-}
-.items{
-    font-style: italic;
-}
-ul{
-    display: inline-block; /* ajusta para que ocupe solamente el espacio de su contenido mas no toda la linea*/
+    width: 30%;
     vertical-align: top;
-    width: 20%;
-    margin-right: 15%;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box; /*Nos ayuda a que los bordes no se salgan del tamaño ya establecido*/
+    border: 2px solid black; /* Suplanta el codigo comentado en una sola linea parametros en orden = ancho, estilo, color*/
+    /*border-color: black;
+    border-width: 2px;      
+    border-style: solid;*/
+    border-radius: 10px;
 }
-.imagenDiferenciales{
+.paquetes li:hover{
+    border-color: #c78c19;
+}
+.paquetes li:active{
+    border-color: #088c19;
+}
+.paquetes h2{
+    font-size: 30px;
+    font-weight: bolder;
+}
+.paquetes li:hover h2{
+    font-size: 33px;
+}
+.productoDescripcion{
+    font-size: 18px;
+}
+.productoPrecio{
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+footer{
+    text-align: center;
+    background: url(img_productos/bg.jpg);
+    padding: 40px;
+}
+.copyright{
+    color: white;
+    font-size: 13px;
+    margin: 20px;
+}
+
+/* Estilos pagina contactos*/
+
+.mainContacto{
+    width: 940px;
+    margin: 0 auto;
+}
+form{
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
     width: 50%;
+}
+.checkbox{
+    margin: 20px 0;
+}
+.boton{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bolder;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 10px;
+    transition: 1s;
+    cursor: pointer;
+}
+.boton:hover{
+    background: darkorange;
+    font-size: 20px;
+    transform: scale(1.2);
+}
+table{
+    margin: 40px 40px;
+}
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bolder;
+}
+td, thead{
+    border: 1px solid black;
+    padding: 8px 15px;
 }
